@@ -1,0 +1,28 @@
+{
+  "name": "react-auth0",
+  "version": "1.0.0",
+  "description": "Just a test to get auth0 to work",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Brocier/node-react-auth0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brocier/node-react-auth0/issues"
+  },
+  "homepage": "https://github.com/Brocier/node-react-auth0#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.5.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "gh-pages": "^1.2.0",
+    "mongoose": "^5.1.5"
+  }
+}
