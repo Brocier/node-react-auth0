@@ -1,17 +1,17 @@
-import React, {Component} from 'react';
-import {Route, Router, Redirect} from 'react-router-dom';
-import NavbarComponent from './NavbarComponent';
-import Home from './Home';
+import React, {Component} from 'react'
+import {Route, Router, Redirect} from 'react-router-dom'
+import NavbarComponent from './NavbarComponent'
+import Home from './Home'
 import ProfilePage from './ProfilePage'
-import CallbackComponent from './CallbackComponent';
-import Auth from '../Auth/Auth';
-import history from '../Auth/history';
+import CallbackComponent from './CallbackComponent'
+import Auth from '../Auth/Auth'
+import history from '../Auth/history'
 
-const auth = new Auth();
+const auth = new Auth()
 
 const handleAuthentication = ({location}) => {
   if (/access_token|id_token|error/.test(location.hash)) {
-    auth.handleAuthentication();
+    auth.handleAuthentication()
   }
 }
 
@@ -35,8 +35,8 @@ class App extends Component {
             : (<ProfilePage auth={auth} {...props}/>))}/>
         </div>
       </Router>
-    );
+    )
   }
 }
 
-export default App;
+export default App
