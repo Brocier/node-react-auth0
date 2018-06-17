@@ -1,3 +1,7 @@
 .btn-margin {
   margin: 7px 3px;
 }
+
+button {
+  font: 30px;
+}
